@@ -10,6 +10,9 @@ public class TitleController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetButtonDown ("Submit")) {
+			GameContext.Instance().Log( "Submit Pressed" );
+			Application.LoadLevel( "InGame" );
+		}
 	}
 }
